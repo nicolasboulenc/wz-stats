@@ -1,0 +1,93 @@
+
+:root {
+	--table-hea: #142637;
+	--table-sum: #1b2d3f;
+	--main-color: #243647;
+	--font-sans: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	--font-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+html, body {
+	overflow-x: hidden;						/* Prevent scroll on narrow devices */
+	background-color: var(--main-color);
+	font-family: var(--font-sans);
+	color: white;
+	min-height: 101vh;
+}
+
+footer {
+	text-align: center;
+	font-style: italic;
+}
+
+a {
+	color: white;
+}
+
+h1 {
+	font-style: italic;
+}
+
+table {
+	width: 100%;
+	/* border: 1px solid white; */
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th {
+	background-color: var(--table-hea);
+}
+
+td, th {
+	padding: 0.5em 0;
+	padding-left: 1em;
+}
+
+.t-sum > td {
+	background-color: var(--table-sum);
+	border-bottom: 1px solid #888;
+}
+
+.t-sum-top > td {
+	border-top: 2px solid white;
+}
+
+.t-sum-top > td:first-child, .t-sum-bottom > td {
+	border-bottom: 2px solid white;
+}
+
+
+
+.t-det > td {
+	border-bottom: 1px solid #888;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tt {
+	vertical-align: top;
+}
+
+.dn {
+	display: none;
+}
+
+.ps1 {
+	padding-left: 2em;
+}
+
+.bn {
+	border: none;
+}
+
+.w20 {
+	width: 17%;
+}
+
+.best {
+	background-color: var(--table-sum) !important;
+}
